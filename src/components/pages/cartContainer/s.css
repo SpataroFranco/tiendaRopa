@@ -1,0 +1,20 @@
+.btn{
+    border-radius: 8px;
+    padding: 10px 10%;
+    cursor: pointer;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.containerBotones{
+    display: flex;
+    justify-content: center;
+}
+
+.containerBotones button{
+    margin: 2rem;
+    padding: 1rem;
+}

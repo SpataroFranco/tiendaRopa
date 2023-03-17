@@ -1,0 +1,107 @@
+.product {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.product .content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: 500px 1fr;
+  gap: calc(var(--size) * 4);
+}
+.product .content .images {
+  width: 100%;
+  background: var(--white-c);
+  border-radius: calc(var(--size) * 2);
+}
+.product .content .card {
+  background-color: var(--white);
+  border-radius: calc(var(--size) * 2);
+  border: 1px solid var(--grey-b);
+  box-shadow: var(--shadow);
+  padding: calc(var(--size) * 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: calc(var(--size) * 2);
+}
+.product .content .card .info {
+  height: 100%;
+}
+.product .content .card .info .price {
+  color: var(--hue);
+  font-size: 22px;
+  font-weight: 500;
+}
+.product .content .card .actions {
+  display: flex;
+  gap: calc(var(--size) * 2);
+  flex-direction: column;
+  width: 100%;
+}
+
+.product .content .card .quanty {
+  display: flex;
+  column-gap: calc(var(--size) * 2);
+  align-items: center;
+}
+.product .content .card .quanty .list-q {
+  width: 46px;
+  position: relative;
+  padding: 6px 12px;
+  background-color: var(--grey);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+}
+.quanty .list-q .options {
+  position: absolute;
+  padding: 6px 12px;
+  top: 36px;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--white-b);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 6px;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.open {
+  opacity: 1 !important;
+  height: auto !important;
+}
+
+.actions .link {
+  width: 100%;
+  height: 36px;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--size);
+}
+
+.actions button{
+  cursor: pointer;
+}
+
+.actions .link a {
+  color: var(--white);
+}
+.contImage{
+  display: flex;
+}
+
+.image{
+  width: 100%;
+  object-fit: contain;
+  justify-content: center;
+}
